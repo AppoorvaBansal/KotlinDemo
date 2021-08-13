@@ -18,6 +18,16 @@ class FactorialActivity : AppCompatActivity() {
        val ednum=findViewById<EditText>(R.id.ednum);
         var btnfact=findViewById<Button>(R.id.btnfact);
         val txtres=findViewById<TextView>(R.id.txtresult)
+        var btnsq=findViewById<Button>(R.id.btnsquare);
+        btnsq.setOnClickListener {
+
+            val num:Int=(ednum.text.toString()).toInt()
+
+            val sq=num*num
+            txtres.text=sq.toString()
+
+        }
+
 
     }
 
