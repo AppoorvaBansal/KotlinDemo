@@ -45,4 +45,9 @@ class FactorialActivity : AppCompatActivity() {
 
 
     }
+
+    fun clear(view:View)
+    {
+
+    }
 }
