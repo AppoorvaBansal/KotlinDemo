@@ -5,42 +5,40 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".FactorialActivity">
+    tools:context=".SpinnerActivity">
+
 
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:id="@+id/ednum"
+        android:id="@+id/eduid"
+        android:hint="UID"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edname"
+        android:hint="Name"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edCITY"
+        android:hint="CITY"
         />
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Factorial"
-        android:onClick="fact"
-        android:id="@+id/btnfact"
+        android:id="@+id/btnsave"
+        android:text="SAVE"
         />
-
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Square"
-
-        android:id="@+id/btnsquare"
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:id="@+id/spinlist"
+        android:background="#121"
+        android:layout_margin="20dp"
         />
-    <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/btnclaer"
-        android:text="Clear"
-        android:onClick="clear"
-        />
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Result"
-        android:textSize="25sp"
-        android:id="@+id/txtresult"/>
-
 
 
 </LinearLayout>

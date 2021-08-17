@@ -6,6 +6,7 @@ import android.view.View
 import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
+import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_factorial.*
 
 class FactorialActivity : AppCompatActivity() {
@@ -48,6 +49,7 @@ class FactorialActivity : AppCompatActivity() {
 
     fun clear(view:View)
     {
-
+        txtresult.text=" "
+        Toast.makeText(this,"CLEAR",Toast.LENGTH_LONG).show()
     }
 }
