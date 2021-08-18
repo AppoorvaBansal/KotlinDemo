@@ -2,10 +2,8 @@ package com.example.kotlindemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ArrayAdapter
-import android.widget.Button
-import android.widget.EditText
-import android.widget.Spinner
+import android.view.View
+import android.widget.*
 import kotlinx.android.synthetic.main.activity_spinner.*
 import java.util.ArrayList
 import java.util.HashMap
@@ -39,6 +37,32 @@ class SpinnerActivity : AppCompatActivity() {
             hashData.put(uid,s)
 
         }
+
+        spinlist.onItemSelectedListener=object :AdapterView.OnItemSelectedListener
+        {
+            override fun onItemSelected(
+                parent: AdapterView<*>?,
+                view: View?,
+                position: Int,
+                id: Long
+            ) {
+                    if(position>0)
+                        {
+
+                            val uid=uiddata.get(position)
+                            val st:StudentSpinner?=hashData.get(uid)
+                            val name=st!!.name
+                            val city=st!!.city
+
+                            Toast.makeText(applicationContext,uid+" "+name+""+city,Toast.LENGTH_LONG).show()
+                        }
+            }
+
+            override fun onNothingSelected(parent: AdapterView<*>?) {
+                TODO("not implemented") //To change body of created functions use File | Settings | File Templates.
+            }
+        }
+
 
 
 
