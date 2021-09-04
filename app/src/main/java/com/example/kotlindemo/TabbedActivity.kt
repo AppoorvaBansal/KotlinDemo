@@ -26,12 +26,12 @@ class TabbedActivity : AppCompatActivity() {
 
 
         //this.viewPager.adapter=viewpageradapter  //Binding PagerAdapter with ViewPager
-        //this.tabLayout!!.setupWithViewPager(this.viewPager) //Binding ViewPager with TabLayout
+        this.tabLayout!!.setupWithViewPager(this.viewPager) //Binding ViewPager with TabLayout
 
 
         //viewPager!!.addOnPageChangeListener(TabLayout.TabLayoutOnPageChangeListener(tabLayout))
 
-       tabLayout!!.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
+     /*  tabLayout!!.addOnTabSelectedListener(object :TabLayout.OnTabSelectedListener{
             override fun onTabReselected(tab: TabLayout.Tab?) {
                 TODO("Not yet implemented")
             }
@@ -44,6 +44,6 @@ class TabbedActivity : AppCompatActivity() {
                 viewPager!!.currentItem = tab!!.position
             }
         })
-
+*/
     }
 }
