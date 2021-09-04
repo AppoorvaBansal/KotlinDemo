@@ -23,7 +23,7 @@ class FactorialActivity : AppCompatActivity() {
         btnsq.setOnClickListener {
 
             val num:Int=(ednum.text.toString()).toInt()
-
+           // val num2:Int=(ednum.text.toString()).toInt()
             val sq=num*num
             txtres.text=sq.toString()
 
