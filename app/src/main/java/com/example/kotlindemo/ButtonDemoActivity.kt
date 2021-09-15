@@ -44,6 +44,7 @@ class ButtonDemoActivity : AppCompatActivity() {
             i.data= Uri.parse("mailto:")
             i.type="text/plain"
             i.putExtra(Intent.EXTRA_EMAIL,"abc@gmail.com")
+            i.putExtra(Intent.EXTRA_CC,"xyz@gmail.com")// send mail
             startActivity(Intent.createChooser(i,"SELECT"))
         }
 
@@ -52,6 +53,8 @@ class ButtonDemoActivity : AppCompatActivity() {
             if(isChecked)
             {
                 Toast.makeText(this,"TOOGLE BUTTON IS ON",Toast.LENGTH_LONG).show()
+
+                //
 
             }
             else
