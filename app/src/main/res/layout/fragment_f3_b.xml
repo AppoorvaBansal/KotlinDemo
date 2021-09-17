@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".F3BFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Andrew E. Rubin is an American computer programmer, entrepreneur, and venture capitalist who left Google in 2014 after allegations of sexual misconduct. Rubin was the founder and former CEO of venture capital firm Playground Global, as well as the co-founder and former CEO of both Danger Inc. and Android Inc"></TextView>
+
+
+
+</FrameLayout>

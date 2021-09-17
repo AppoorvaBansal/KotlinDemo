@@ -1,15 +1,63 @@
 <?xml version="1.0" encoding="utf-8"?>
-<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:orientation="vertical"
     tools:context=".AboutUsFragment">
 
     <!-- TODO: Update blank fragment layout -->
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:background="#82B1FF"
-        android:text="@string/hello_blank_fragment" />
 
-</FrameLayout>
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:orientation="horizontal">
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf1"
+        android:layout_weight="1"
+        android:text="f1"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf2"
+        android:layout_weight="1"
+        android:text="f2"/>
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnf3"
+        android:layout_weight="1"
+        android:text="f3"/>
+</LinearLayout>
+
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/fragment1"
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/fragment2"
+
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+    <FrameLayout
+        android:layout_width="200dp"
+        android:layout_height="100dp"
+        android:id="@+id/fragment3"
+
+        android:layout_margin="10dp"
+        android:layout_gravity="center"
+        />
+
+
+
+</LinearLayout>

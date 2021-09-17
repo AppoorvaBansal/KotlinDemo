@@ -9,7 +9,7 @@
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
-        android:layout_height="150dp"
+        android:layout_height="80dp"
         android:background="@color/colorAccent"
         android:id="@+id/tab1"
         app:tabTextColor="@color/colorPrimaryDark"
