@@ -3,6 +3,7 @@ package com.example.kotlindemo
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.Gravity
+import android.view.View
 import android.widget.Button
 import android.widget.LinearLayout
 import android.widget.Toast
@@ -18,26 +19,29 @@ class CustomToastDemoActivity : AppCompatActivity() {
 
         val ll=findViewById<LinearLayout>(R.id.ll)
         val btntoast=findViewById<Button>(R.id.btnToast)
-        val tstlay=layoutInflater.inflate(R.layout.toastlayout,ll)
-        fm=supportFragmentManager
+
+        //val mytoast: View =layoutInflater.inflate(R.layout.toastlayout,ll)
+        val tstlay=layoutInflater.inflate(R.layout.toastlayout,ll)  // a kind of view object
+
+
+        fm=supportFragmentManager   // return Frag Mang class obbject
         ft=fm!!.beginTransaction()
         ft!!.add(R.id.frm,F1Fragment())
         ft!!.commit()
+
+
         btntoast.setOnClickListener {
 
-            val t=Toast(applicationContext)
-            t.duration=Toast.LENGTH_LONG
-            t.setGravity(Gravity.CENTER_VERTICAL,0,0)
-            t.view=tstlay
-            t.show()
+           // val mytoast=Toast(applicationContext) // object of toast class
+           // mytoast.duration=Toast.LENGTH_LONG
+           // mytoast.setGravity(Gravity.CENTER_HORIZONTAL,0,0)
+           // mytoast.view=tstlay
+           // mytoast.show()
 
-            fm=supportFragmentManager
-            ft=fm!!.beginTransaction()
-            ft!!.replace(R.id.frm,F2Fragment())
-
+           fm=supportFragmentManager
+           ft=fm!!.beginTransaction()
+            ft!!.replace(R.id.frm,F1AFragment())
             ft!!.commit()
-
-
 
 }
 

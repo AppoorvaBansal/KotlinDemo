@@ -9,7 +9,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/b3"
+        android:src="@drawable/f1"
         android:id="@+id/imgtoast"
         />
     <TextView
