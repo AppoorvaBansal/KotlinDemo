@@ -55,6 +55,8 @@ class MyListAdapter(applicationContext: Context?, arrimg: ArrayList<Int>, arrnam
         }
 
 
+
+
         img1.setImageResource(arrimg.get(position))
         txtname.setText(arrname[position])
         txtcon.setText(arrcontact[position])
