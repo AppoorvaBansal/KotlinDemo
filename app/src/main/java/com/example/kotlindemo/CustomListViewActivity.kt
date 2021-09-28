@@ -7,7 +7,7 @@ import android.widget.ListView
 class CustomListViewActivity : AppCompatActivity() {
 var listContact:ListView?=null
 var arrname:ArrayList<String>?=null
-    var arrcontact:MutableList<String>?=null
+    var arrcontact:ArrayList<String>?=null
     var arrmail:ArrayList<String>?=null
     var arrimg:ArrayList<Int>?=null
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -30,7 +30,7 @@ var arrname:ArrayList<String>?=null
         arrname!!.add("Anusha")
         arrname!!.add("Bhawana")
         arrname!!.add("Divya")
-        arrname!!.add("Deepak")
+
 
         arrcontact!!.add("5555656545")
         arrcontact!!.add("5555656545")
@@ -53,6 +53,22 @@ var arrname:ArrayList<String>?=null
         arrmail!!.add("abc@gmail.com")
         arrmail!!.add("abc@gmail.com")
         arrmail!!.add("abc@gmail.com")
+
+        arrimg!!.add(R.drawable.f1)
+        arrimg!!.add(R.drawable.f2)
+        arrimg!!.add(R.drawable.f3)
+        arrimg!!.add(R.drawable.f1)
+        arrimg!!.add(R.drawable.f2)
+        arrimg!!.add(R.drawable.f3)
+        arrimg!!.add(R.drawable.f1)
+        arrimg!!.add(R.drawable.f2)
+        arrimg!!.add(R.drawable.f3)
+        arrimg!!.add(R.drawable.f1)
+
+        val mylistadp:MyListAdapter=MyListAdapter(applicationContext,arrimg!!,arrname!!,arrcontact!!,arrmail!!)
+        listContact!!.adapter=mylistadp
+
+
 
 
 

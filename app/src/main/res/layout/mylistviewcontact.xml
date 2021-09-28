@@ -7,12 +7,12 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="horizontal">
-    <ImageView
+        <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
         android:id="@+id/imgcon"
         android:layout_weight="0.2"
-        android:src="@drawable/f1"
+
         />
 
         <LinearLayout
@@ -27,26 +27,23 @@
                 android:id="@+id/txtname"
                 android:textSize="25sp"
                 android:layout_marginLeft="20dp"
-                android:text="MARK"
-                />
 
+                />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginLeft="20dp"
-                android:text="1212221212"
+
                 android:textSize="25sp"
                 android:id="@+id/txtcontact"/>
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:id="@+id/txtemail"
-                android:textSize="25sp"
+                android:textSize="20sp"
                 android:layout_marginLeft="20dp"
-                android:text="abc@gmail.com"
+
                 />
-
-
 
         </LinearLayout>
 
@@ -64,14 +61,15 @@
                 android:layout_marginLeft="20dp"
                 />
 
-            <ImageView
+            <ImageButton
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="20dp"
                 android:id="@+id/iconcall"
                 android:src="@drawable/ic_call"
                 />
-            <ImageView
+
+            <ImageButton
                 android:layout_width="30dp"
                 android:layout_height="30dp"
                 android:layout_marginLeft="20dp"
@@ -81,6 +79,8 @@
 
 
         </LinearLayout>
+
+
     </LinearLayout>
 
 </LinearLayout>
