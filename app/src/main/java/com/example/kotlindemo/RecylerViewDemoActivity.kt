@@ -2,6 +2,7 @@ package com.example.kotlindemo
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 
@@ -15,12 +16,12 @@ class RecylerViewDemoActivity : AppCompatActivity() {
         val recyclerview = findViewById<RecyclerView>(R.id.recyclerview)
 
         // this creates a vertical layout Manager
-        recyclerview.layoutManager = LinearLayoutManager(this)
+        recyclerview.layoutManager = GridLayoutManager(this,2,GridLayoutManager.VERTICAL,false)
 
-        // ArrayList of class ItemsViewModel
+        // ArrayList of class DATA
         val data = ArrayList<DataInRecycleView>()
 
-// This loop will create 20 Views containing
+// This loop will create 50 Views containing
         // the image with the count of view
         for (i in 1..50) {
             data.add(DataInRecycleView(R.drawable.ic_email, "Item " + i))
