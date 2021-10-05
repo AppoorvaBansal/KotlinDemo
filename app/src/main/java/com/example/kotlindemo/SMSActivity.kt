@@ -1,7 +1,9 @@
 package com.example.kotlindemo
 
 import android.Manifest
+import android.content.Intent
 import android.content.pm.PackageManager
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.telephony.SmsManager
@@ -29,6 +31,26 @@ class SMSActivity : AppCompatActivity() {
         txtMessage = findViewById(R.id.edmessage);
 
             appBtn!!.setOnClickListener {
+
+                val smsIntent =  Intent(Intent.ACTION_SENDTO,Uri.parse("smsto:"));
+                phoneNo = txtphoneNo!!.text.toString();
+                message = txtMessage!!.text.toString();
+                smsIntent.setData(Uri.parse("smsto:"));
+               // smsIntent.setType("vnd.android-dir/mms-sms");
+                smsIntent.putExtra("address"  , phoneNo);
+                smsIntent.putExtra(Intent.EXTRA_TEXT  , message);
+
+                try {
+                    startActivity(smsIntent);
+                    Toast.makeText(getApplicationContext(), "SMS sent.",
+                        Toast.LENGTH_LONG).show();
+                    //finish();
+
+                } catch (e:Exception) {
+                Toast.makeText(this,
+                 "SMS faild, please try again later.   "+e.toString(), Toast.LENGTH_SHORT).show();
+            }
+
 
             }
 
