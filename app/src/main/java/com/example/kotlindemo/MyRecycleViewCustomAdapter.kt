@@ -10,6 +10,7 @@ import androidx.recyclerview.widget.RecyclerView
 
 class MyRecycleViewCustomAdapter(data: ArrayList<DataInRecycleView>) : RecyclerView.Adapter<MyRecycleViewCustomAdapter.ViewHolder>() {
         val data =data
+
     override fun onCreateViewHolder(
         parent: ViewGroup,
         viewType: Int
@@ -22,8 +23,8 @@ class MyRecycleViewCustomAdapter(data: ArrayList<DataInRecycleView>) : RecyclerV
     }
 
     class ViewHolder(val view:View):RecyclerView.ViewHolder(view) {
-        val imageView: ImageView = itemView.findViewById(R.id.imageview)
-        val textView: TextView = itemView.findViewById(R.id.textView)
+        val imageView: ImageView = view.findViewById(R.id.imageview)
+        val textView: TextView = view.findViewById(R.id.textView)
 
     }
 
