@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <item android:id="@+id/itemcopy"
+        android:title="COPY"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/itemedit"
+        android:title="EDIT"
+        app:showAsAction="never"
+        />
+    <item android:id="@+id/itemcut"
+        android:title="CUT"
+        app:showAsAction="never"
+        />
+
+</menu>
