@@ -15,7 +15,7 @@ class DragandLongclickActivity : AppCompatActivity() {
     var imgproduct: ImageView?=null
     var imgdrag:ImageView?=null
     var items:Int=0
-    var btnNotification:TextView?=null
+    var txtcount:TextView?=null
     var llay:ConstraintLayout?=null
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,8 +23,8 @@ class DragandLongclickActivity : AppCompatActivity() {
 
         imgdrag=findViewById(R.id.imgdrag)
         imgproduct=findViewById(R.id.imgproduct)
-        llay = findViewById(R.id.ll);
-btnNotification=findViewById(R.id.txtcounter)
+        //llay = findViewById(R.id.ll);
+        txtcount=findViewById(R.id.txtcounter)
         imgproduct!!.setOnLongClickListener {
             val clipData = ClipData.newPlainText("ok", "ok");
             val dragShadow =  View.DragShadowBuilder(it);
@@ -49,7 +49,7 @@ btnNotification=findViewById(R.id.txtcounter)
                     Toast.makeText(this,"ENDD",Toast.LENGTH_LONG).show()
                    // items=items+1;
                     //      Log.d(TAG, "onDrag: Ended")
-                   btnNotification!!.setText(items.toString());
+                   txtcount!!.setText(items.toString());
                     //val snackbar = Snackbar.make(llay as ConstraintLayout,"Items: "+items,Snackbar.LENGTH_LONG);
                     //snackbar.show()
                 }

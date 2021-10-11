@@ -8,8 +8,8 @@ import android.widget.ImageView
 class DragandDropActivity : AppCompatActivity() {
 
     var imgDD:ImageView?=null
-    var xd:Float= 0F
-    var yd:Float=0F
+    var xd:Float= 0F  // down
+    var yd:Float=0F   //down
     var xm:Float?=null
     var ym:Float?=null
     var xdes:Float?=null
